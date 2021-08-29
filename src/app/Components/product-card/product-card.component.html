@@ -1,0 +1,20 @@
+<mat-card class="product-card" tabindex="0" style="margin: 0">
+  <img
+    [src]="'../../assets/' + producto.image + '.jpg'"
+    class="product-card__img"
+    mat-card-image
+  />
+  <mat-card-title>{{
+    producto.price | currency: "ARS":"symbol-narrow":"1.2-2"
+  }}</mat-card-title>
+  <mat-card-subtitle>{{ producto.item }}</mat-card-subtitle>
+  <mat-card-content>
+    <p class="product-card__description">
+      {{ producto.description }}
+    </p>
+    <p class="product-card__location">{{ producto.location }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a class="product-card__button" mat-raised-button>Lo quiero!</a>
+  </mat-card-actions>
+</mat-card>

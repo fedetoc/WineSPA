@@ -1,0 +1,11 @@
+<mat-sidenav-container class="sidenav__container">
+  <mat-sidenav mode="side" [(opened)]="opened" class="sidenav__side">
+    <button mat-button class="sidenav_btn">Productos</button>
+    <button mat-button class="sidenav_btn">Registro</button>
+    <button mat-button class="sidenav_btn">Perfil</button>
+  </mat-sidenav>
+  <mat-sidenav-content
+    [class]="opened ? 'content content__onOpen' : 'content content__onClose'"
+    ><ng-content></ng-content
+  ></mat-sidenav-content>
+</mat-sidenav-container>

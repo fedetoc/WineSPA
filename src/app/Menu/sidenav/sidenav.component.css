@@ -1,0 +1,37 @@
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
+.sidenav__container {
+  width: 100%;
+  min-height: calc(100% - 64px)
+    /*64px es el height del mat-toolbar del componente topbar*/;
+  background-color: #000000;
+  color: black;
+}
+
+.sidenav__side {
+  padding: 0.8rem 0rem;
+  min-width: 14rem;
+  width: 24%;
+}
+
+.sidenav_btn {
+  width: 100%;
+  padding: 0.3rem 0rem;
+}
+
+.content {
+  transition: all 0.9s 0.04s;
+}
+
+.content__onOpen {
+  padding: 3rem 2rem;
+}
+
+.content__onClose {
+  padding: 3rem 5rem;
+}

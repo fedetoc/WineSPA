@@ -1,0 +1,10 @@
+.home {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 25%));
+  grid-auto-rows: minmax(20rem, 27rem);
+  justify-content: center;
+  column-gap: 8rem;
+  row-gap: 6rem;
+  position: relative;
+}

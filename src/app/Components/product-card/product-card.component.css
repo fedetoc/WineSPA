@@ -1,0 +1,29 @@
+.product-card {
+  width: 17rem;
+  background-color: #171010;
+  color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+.product-card__description {
+  line-height: 1.8;
+  font-weight: 300;
+  margin: 2rem 0;
+  letter-spacing: 0.5px;
+  height: 4.68rem;
+}
+
+.product-card__location {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.product-card__button {
+  width: 100%;
+  background-color: #362222;
+}
+
+.product-card__img {
+  height: 12rem;
+  object-fit: cover;
+}

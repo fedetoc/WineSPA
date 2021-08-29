@@ -1,0 +1,7 @@
+<div class="home">
+  <app-loading *ngIf="loading"></app-loading>
+
+  <ng-container *ngFor="let producto of productos" #elseBlock>
+    <app-product-card [producto]="producto"></app-product-card>
+  </ng-container>
+</div>

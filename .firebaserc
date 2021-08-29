@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angularutn-ed18b": {
+      "hosting": {
+        "tpFinal": [
+          "angularutn-ed18b"
+        ]
+      }
+    }
+  }
+}
