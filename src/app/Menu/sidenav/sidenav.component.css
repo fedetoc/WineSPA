@@ -1,14 +1,7 @@
-.example-container {
-  width: 400px;
-  height: 200px;
-  margin: 10px;
-  border: 1px solid #555;
-}
-
 .sidenav__container {
   width: 100%;
-  min-height: calc(100% - 64px)
-    /*64px es el height del mat-toolbar del componente topbar*/;
+  /*min-height: calc(100% - 64px)*/
+  /*64px es el height del mat-toolbar del componente topbar*/
   background-color: #000000;
   color: black;
 }
@@ -17,6 +10,8 @@
   padding: 0.8rem 0rem;
   min-width: 14rem;
   width: 24%;
+  /*position: fixed;
+  z-index: 10;*/
 }
 
 .sidenav_btn {
@@ -26,6 +21,8 @@
 
 .content {
   transition: all 0.9s 0.04s;
+  height: calc(100vh - 160px);
+  overflow-y: scroll;
 }
 
 .content__onOpen {

@@ -4,8 +4,15 @@
     <button mat-button class="sidenav_btn">Registro</button>
     <button mat-button class="sidenav_btn">Perfil</button>
   </mat-sidenav>
+
   <mat-sidenav-content
-    [class]="opened ? 'content content__onOpen' : 'content content__onClose'"
-    ><ng-content></ng-content
+    ><div class="scrollable">
+      <div
+        [class]="
+          opened ? 'content content__onOpen' : 'content content__onClose'
+        "
+      >
+        <ng-content></ng-content>
+      </div></div
   ></mat-sidenav-content>
 </mat-sidenav-container>

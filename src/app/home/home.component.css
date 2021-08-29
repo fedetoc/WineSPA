@@ -1,7 +1,8 @@
 .home {
   width: 100%;
+
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 25%));
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 0.2fr));
   grid-auto-rows: minmax(20rem, 27rem);
   justify-content: center;
   column-gap: 8rem;
