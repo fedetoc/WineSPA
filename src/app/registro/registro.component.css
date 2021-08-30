@@ -1,0 +1,67 @@
+.registro {
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registro__title {
+  font-family: "Parisienne", Arial, Helvetica, sans-serif;
+  color: rgb(123, 69, 69);
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.registro__button {
+  background-color: transparent;
+  /*color: rgb(43, 43, 43);*/
+  color: rgb(207, 207, 207);
+  border: 2px solid rgb(207, 207, 207);
+  box-sizing: content-box;
+  padding: 0.5rem 0.5rem;
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  animation: appearBtn 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.registro__button:active {
+  border: 2px solid black;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.registro__button-icon {
+  font-size: 2rem;
+  margin-right: 0.2rem;
+  margin-top: -0.2rem;
+}
+
+.registro__button:active .registro__button-icon {
+  color: rgb(12, 12, 12);
+}
+
+.registro-error {
+  color: red;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  left: 7%;
+  width: 14rem;
+}
+
+@keyframes appearBtn {
+  0% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+
+  90% {
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

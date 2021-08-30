@@ -1,5 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: black !important;
+  -webkit-box-shadow: 0 0 0 30px black inset !important;
+}
+
+@font-face {
+  font-family: "Parisienne";
+  src: local("Parisienne"),
+    url(./assets/fonts/Parisienne-Regular.ttf) format("truetype");
+}
+
 html,
 body {
   height: 100%;

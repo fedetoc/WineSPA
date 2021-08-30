@@ -1,0 +1,24 @@
+<div
+  [class]="
+    controlAtr.invalid
+      ? 'registroForm__input_cont isInvalid'
+      : 'registroForm__input_cont isValid'
+  "
+  [style]="'margin-bottom: ' + bottomMargin + 'rem'"
+  [formGroup]="fGroup"
+>
+  <input
+    [type]="type"
+    [placeholder]="placeholder"
+    [class]="
+      controlAtr.invalid
+        ? 'registro__input registroForm__input isInvalid'
+        : 'registro__input registroForm__input isValid'
+    "
+    [formControlName]="name"
+  />
+  <span class="registroForm__input_span">{{ placeholder }}</span>
+  <span
+    [class]="'registroForm__input_space ' + placeholderSpace + '-space'"
+  ></span>
+</div>

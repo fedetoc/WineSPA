@@ -22,6 +22,10 @@ import {
 } from '@angular/fire/compat/analytics';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { LoadingComponent } from './loading/loading.component';
+import { environment } from 'src/environments/environment';
+import { RegistroComponent } from './registro/registro.component';
+import { InputComponent } from './input/input.component';
+import { ReactiveFormsModule } from '@angular/forms';
 ////////NUEVA ACTUALIZACION DE FIREBASE/////////////7
 /*import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import {
@@ -30,16 +34,7 @@ import {
   connectFirestoreEmulator,
   enableIndexedDbPersistence,
 } from '@angular/fire/firestore'; */
-
-const firebaseConfig = {
-  apiKey: 'AIzaSyCFwVkAXtJ7SxvZSOeSlEM4kHR02kMXBRo',
-  authDomain: 'angularutn-ed18b.firebaseapp.com',
-  projectId: 'angularutn-ed18b',
-  storageBucket: 'angularutn-ed18b.appspot.com',
-  messagingSenderId: '182835672731',
-  appId: '1:182835672731:web:1731f670a3aecf89ce783e',
-  measurementId: 'G-PKKF9H5VEC',
-};
+///////////////////////////////////////////////////////////
 
 @NgModule({
   declarations: [
@@ -49,6 +44,8 @@ const firebaseConfig = {
     ProductCardComponent,
     HomeComponent,
     LoadingComponent,
+    RegistroComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,9 +58,10 @@ const firebaseConfig = {
     MatSidenavModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireAnalyticsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
