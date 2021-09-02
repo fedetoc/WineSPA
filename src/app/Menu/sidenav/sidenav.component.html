@@ -1,5 +1,9 @@
 <mat-sidenav-container class="sidenav__container">
-  <mat-sidenav mode="side" [(opened)]="opened" class="sidenav__side">
+  <mat-sidenav
+    [mode]="mediaMatch.matches ? 'over' : 'side'"
+    [(opened)]="opened"
+    class="sidenav__side"
+  >
     <button mat-button class="sidenav_btn">Productos</button>
     <button mat-button class="sidenav_btn">Registro</button>
     <button mat-button class="sidenav_btn">Perfil</button>

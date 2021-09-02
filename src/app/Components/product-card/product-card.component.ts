@@ -7,14 +7,7 @@ import { Producto } from 'src/app/interfaces/productos';
   styleUrls: ['./product-card.component.css'],
 })
 export class ProductCardComponent implements OnInit {
-  @Input() producto: Producto = {
-    price: 0,
-    description: '',
-    location: '',
-    item: '',
-    categoria: '',
-    image: '',
-  };
+  @Input() producto: Producto | undefined;
   constructor() {}
 
   ngOnInit(): void {}

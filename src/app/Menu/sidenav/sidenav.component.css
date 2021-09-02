@@ -9,9 +9,22 @@
 .sidenav__side {
   padding: 0.8rem 0rem;
   min-width: 14rem;
-  width: 24%;
+  width: 20rem;
   /*position: fixed;
   z-index: 10;*/
+}
+
+@media (max-width: 70em) {
+  .sidenav__side {
+    width: 14rem;
+  }
+}
+@media (max-width: 60em) {
+  .sidenav__side {
+    width: 100%;
+    height: 40%;
+    transform: translate3d(0, -100%, 0);
+  }
 }
 
 .sidenav_btn {
@@ -31,4 +44,9 @@
 
 .content__onClose {
   padding: 3rem 5rem;
+}
+@media (max-width: 90em) {
+  .content__onClose {
+    padding: 3rem 1rem;
+  }
 }

@@ -81,9 +81,11 @@
 }
 
 .isInvalid {
+  transition: all 0.2s;
   border-left: 5px solid #a94442; /* red */
 }
 
 .isValid {
+  transition: all 0.4s;
   border-left: 5px solid #3f7e27; /* red */
 }

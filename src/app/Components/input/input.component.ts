@@ -8,7 +8,8 @@ import { FormGroup } from '@angular/forms';
 })
 export class InputComponent implements OnInit {
   @Input() placeholder = '';
-  @Input() name: string = '';
+  @Input() name = '';
+  @Input() initialValue = '';
   @Input() placeholderSpace = 'small';
   @Input() type = 'text';
   @Input() bottomMargin = '0';

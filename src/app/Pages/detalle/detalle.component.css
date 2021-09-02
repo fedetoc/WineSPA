@@ -1,0 +1,117 @@
+.detalle-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-height: 66vh;
+  padding: 0 3rem;
+}
+
+@media (max-width: 60em) {
+  .detalle-container {
+    justify-content: stretch;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+}
+
+.detalle__card {
+  flex: 1;
+  background-color: #171010;
+  padding: 3rem 2.5rem;
+  box-sizing: border-box;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detalle-imgContainer {
+  flex: 0 0 35%;
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 60em) {
+  .detalle-imgContainer {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.detalle-producto__img {
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+  height: 100%;
+}
+
+.detalle__card-header > * {
+  margin-bottom: 2rem;
+}
+
+.detalle__card-title {
+  font-size: 1.8rem;
+}
+
+.detalle-descripcion__p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+.detalle__card-price {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.detalle__stock {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+
+  color: rgb(94, 145, 64);
+}
+
+.detalle__stock_disp {
+  line-height: 1;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-left: 1rem;
+}
+
+.detalle__comprar {
+  display: block;
+  margin: 2rem auto;
+  background-color: #362727;
+  padding: 0.5rem 3.5rem;
+  font-size: 1.4rem;
+  color: black;
+  transition: all 0.5s;
+}
+
+.detalle__comprar:hover {
+  background-color: #362727;
+  color: rgb(102, 102, 102);
+  transform: translateY(-3px);
+  box-shadow: 0rem 0rem 3rem #1f011b, 0rem 0rem 3rem #1f011b;
+  background-color: #5e0251;
+}
+
+/*.compra__realizada {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #5e0251;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.detalle__comprar:active {
+}*/

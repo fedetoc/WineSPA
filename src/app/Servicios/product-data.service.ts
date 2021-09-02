@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Producto } from './interfaces/productos';
+import { Producto } from '../interfaces/productos';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 
@@ -9,8 +9,9 @@ import { Observable } from 'rxjs';
 export class ProductDataService {
   private dataOb: Observable<Producto[]>;
   constructor(public firestore: AngularFirestore) {
+    const objId = { idField: 'id' };
     this.dataOb = <Observable<Producto[]>>(
-      this.firestore.collection('productos').valueChanges()
+      this.firestore.collection('productos').valueChanges(objId)
     );
   }
   getProductData(): Observable<Producto[]> {

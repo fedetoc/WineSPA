@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Producto } from '../interfaces/productos';
-import { ProductDataService } from '../product-data.service';
+import { Producto } from '../../interfaces/productos';
+import { ProductDataService } from '../../Servicios/product-data.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -20,7 +20,6 @@ export class HomeComponent implements OnInit {
     this.productService.getProductData().subscribe((data) => {
       this.productos = data;
       this.loading = false;
-      console.log(this.productos);
     });
   }
 }
