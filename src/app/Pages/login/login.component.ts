@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Field, FieldObject } from '../interfaces/fieldObject';
+import { Field, FieldObject } from '../../interfaces/fieldObject';
 import loginFields from './fieldsLogin';
 @Component({
   selector: 'app-login',

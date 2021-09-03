@@ -4,19 +4,20 @@
     [(opened)]="opened"
     class="sidenav__side"
   >
-    <button mat-button class="sidenav_btn">Productos</button>
-    <button mat-button class="sidenav_btn">Registro</button>
-    <button mat-button class="sidenav_btn">Perfil</button>
+    <a mat-button class="sidenav_btn" routerLink="/noExiste">Opcion 1</a>
+    <a mat-button class="sidenav_btn" routerLink="/noExiste">Opcion 2</a>
+    <a mat-button class="sidenav_btn" routerLink="/noExiste">Opcion 3</a>
+    <p class="copyright">
+      Esta pagina fue diseñada y programada por Federico Tocco para entrega del
+      Trabajo Final del curso de Angular de la UTN. Todos los derechos
+      reservados
+    </p>
   </mat-sidenav>
 
-  <mat-sidenav-content
-    ><div class="scrollable">
-      <div
-        [class]="
-          opened ? 'content content__onOpen' : 'content content__onClose'
-        "
-      >
-        <ng-content></ng-content>
-      </div></div
+  <mat-sidenav-content>
+    <div
+      [class]="opened ? 'content content__onOpen' : 'content content__onClose'"
+    >
+      <ng-content></ng-content></div
   ></mat-sidenav-content>
 </mat-sidenav-container>

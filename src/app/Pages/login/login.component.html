@@ -11,4 +11,12 @@
       [fGroup]="formLogin"
     ></app-input>
   </ng-container>
+
+  <button
+    [disabled]="formLogin.status === 'INVALID'"
+    class="boton__login"
+    mat-flat-button
+  >
+    Loguearme
+  </button>
 </form>

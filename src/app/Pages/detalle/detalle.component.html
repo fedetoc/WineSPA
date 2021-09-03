@@ -9,7 +9,7 @@
       />
     </div>
     <mat-card class="detalle__card">
-      <div class="detalle__card_titles">
+      <div>
         <mat-card-title class="detalle__card-title">{{
           producto.item
         }}</mat-card-title>
@@ -17,27 +17,54 @@
           producto.price | currency: "ARS":"symbol-narrow":"1.2-2"
         }}</mat-card-subtitle>
       </div>
-      <ng-container *ngIf="producto.tarjetaPromo">
+      <ng-container *ngIf="producto.tarjetaPromo; else promoNoDisp">
         <h3 class="detalle__payment">
           {{ producto.tarjetaPromo }} {{ producto.cuotas }} sin interés
         </h3></ng-container
       >
+      <ng-template #promoNoDisp
+        ><h3 class="detalle__payment">
+          No hay promociones vigentes para este producto
+        </h3></ng-template
+      >
+
       <div class="detalle-descripcion">
         <p class="detalle-descripcion__p">
           {{ producto.description }}
         </p>
       </div>
-      <div *ngIf="producto.stock">
-        <div class="detalle__stock">
-          <span class="detalle__stock_disp">Stock Disponible</span>
-          <mat-icon class="icon-payment">alarm_on</mat-icon>
-        </div>
-      </div>
+      <ng-container
+        *ngTemplateOutlet="producto.stock ? stockDisponible : stockNoDisponible"
+      ></ng-container>
     </mat-card>
+    <div class="detalle__comprar-cont">
+      <button
+        [disabled]="!producto.stock"
+        class="detalle__comprar"
+        mat-flat-button
+      >
+        Comprar
+      </button>
+    </div>
   </div>
-  <button class="detalle__comprar" mat-flat-button>Comprar</button>
   <!--<span class="compra__realizada">Gracias por su Compra!</span>-->
 </div>
+
+<ng-template #stockDisponible>
+  <div class="detalle__stock detalle__stock--disp">
+    <span class="detalle__stock_p">Stock Disponible</span>
+    <mat-icon class="icon-payment">alarm_on</mat-icon>
+  </div>
+</ng-template>
+
+<ng-template #stockNoDisponible>
+  <div class="detalle__stock detalle__stock--noDisp">
+    <span class="detalle__stock_p"
+      >Lo sentimos, no contamos con stock en este momento</span
+    >
+    <mat-icon class="icon-payment">error_outline</mat-icon>
+  </div>
+</ng-template>
 
 <ng-template #notFound
   ><ng-container *ngIf="!loading"><app-not-found></app-not-found></ng-container

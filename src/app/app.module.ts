@@ -36,7 +36,7 @@ import {
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from 'src/environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './Pages/login/login.component';
 ////////NUEVA ACTUALIZACION DE FIREBASE/////////////7
 /*import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import {
