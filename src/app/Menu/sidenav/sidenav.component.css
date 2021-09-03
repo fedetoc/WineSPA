@@ -63,3 +63,9 @@
   transform: translateX(50%);
   width: 85%;
 }
+
+@media (max-width: 60em) {
+  .copyright {
+    top: 75%;
+  }
+}
