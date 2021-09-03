@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { DetalleComponent } from './Pages/detalle/detalle.component';
 import { RegistroComponent } from './Pages/registro/registro.component';
+import { NotFoundComponent } from './Pages/not-found/not-found.component';
 
 //////////////////////////MODULOS PROPIOS//////////////////////
 import { TopbarComponent } from './Menu/topbar/topbar.component';
@@ -35,7 +36,7 @@ import {
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from 'src/environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NotFoundComponent } from './Pages/not-found/not-found.component';
+import { LoginComponent } from './login/login.component';
 ////////NUEVA ACTUALIZACION DE FIREBASE/////////////7
 /*import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import {
@@ -58,6 +59,7 @@ import {
     InputComponent,
     DetalleComponent,
     NotFoundComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

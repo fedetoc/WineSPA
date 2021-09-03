@@ -1,0 +1,14 @@
+<form class="login" [formGroup]="formLogin" (ngSubmit)="submit()">
+  <h2 class="login__title">Login</h2>
+  <ng-container *ngFor="let field of fieldsDefinition; index as i; count as c">
+    <app-input
+      [name]="field.name.toString()"
+      [type]="field.type"
+      [initialValue]="field.initialValue"
+      [placeholder]="field.placeholder"
+      [placeholderSpace]="field.plcSpace"
+      [bottomMargin]="i === c - 1 ? '0' : '3'"
+      [fGroup]="formLogin"
+    ></app-input>
+  </ng-container>
+</form>
