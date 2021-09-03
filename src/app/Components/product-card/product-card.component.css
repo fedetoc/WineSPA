@@ -6,6 +6,12 @@
   min-width: 0;
 }
 
+@media (max-width: 27em) {
+  .product-card {
+    width: 85%;
+  }
+}
+
 .product-card__description {
   line-height: 1.8;
   font-weight: 300;
