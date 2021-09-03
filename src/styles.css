@@ -19,15 +19,15 @@ body {
   height: 100%;
 }
 
-@media (max-width: 40em) {
+@media (max-width: 60em) {
   html {
     font-size: 90%;
   }
 }
 
-@media (max-width: 60em) {
+@media (max-width: 40em) {
   html {
-    font-size: 80%;
+    font-size: 70%;
   }
 }
 
