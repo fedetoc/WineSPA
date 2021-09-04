@@ -57,15 +57,9 @@
   font-weight: 300;
   font-size: 0.7rem;
   position: absolute;
-  top: 90%;
+  top: 79%;
   right: 50%;
   text-align: center;
   transform: translateX(50%);
   width: 85%;
-}
-
-@media (max-width: 60em) {
-  .copyright {
-    top: 75%;
-  }
 }

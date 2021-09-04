@@ -6,3 +6,11 @@
   color: rgb(190, 190, 190);
   font-size: 1rem;
 }
+
+.home__link,
+.home__link:visited,
+.home__link:link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}

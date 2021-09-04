@@ -12,6 +12,18 @@
   z-index: 500;
 }
 
+.registro__input {
+  width: 20rem;
+  height: 2rem;
+}
+
+@media (max-width: 37em) {
+  .registro__input {
+    box-sizing: border-box;
+    height: 3.5rem;
+  }
+}
+
 .registroForm__input:focus {
   outline: none;
   box-shadow: -0.05rem 0rem 0.45rem 0.1rem black;
@@ -73,11 +85,6 @@
 .registroForm__input_cont {
   display: inline-block;
   position: relative;
-}
-
-.registro__input {
-  width: 20rem;
-  height: 2rem;
 }
 
 .isInvalid {
